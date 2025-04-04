@@ -20,12 +20,12 @@
       }
 
       #assistant-iframe {
-        display: none;
+        /* display: none; */
         position: fixed;
         top: 0;
         right: 0;
-        width: 100vw;
-        height: 100vh;
+        width: 70px;
+        height: 70px;
         border: none;
         z-index: 9998;
         background: white;
@@ -35,7 +35,7 @@
   </head>
   <body>
     <!-- Icon that triggers iframe display -->
-    <div id="assistant-icon" onclick="toggleIframe()">
+    <!-- <div id="assistant-icon" onclick="toggleIframe()"> -->
 
         
     </div>
@@ -47,12 +47,12 @@
     ></iframe>
     <!-- Hidden iframe -->
 
-    <script>
+    <!-- <script>
       function toggleIframe() {
         const iframe = document.getElementById("assistant-iframe");
         iframe.style.display = iframe.style.display === "block" ? "none" : "block";
       }
-    </script>
+    </script> -->
   </body>
 </html>
 
