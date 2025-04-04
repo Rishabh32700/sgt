@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Embed Assistant Icon</title>
+    <style>
+
+      #assistant-icon {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        background: url('./maleIcon.avif') no-repeat center center;
+        background-size: contain;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 9999;
+      }
+
+      #assistant-iframe {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        border: none;
+        z-index: 9998;
+        background: white;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- Icon that triggers iframe display -->
+    <div id="assistant-icon" onclick="toggleIframe()">
+
+        
+    </div>
+    
+    <iframe
+      id="assistant-iframe"
+      allow="microphone"
+      src="https://evademo.bngrenew.com/sgt/"
+    ></iframe>
+    <!-- Hidden iframe -->
+
+    <script>
+      function toggleIframe() {
+        const iframe = document.getElementById("assistant-iframe");
+        iframe.style.display = iframe.style.display === "block" ? "none" : "block";
+      }
+    </script>
+  </body>
+</html>
